@@ -10,7 +10,7 @@ const userSchema = mongoose.Schema({
     email: {
         type: String,
         trim: true, // spacebar(공백)를 없애주는 역할
-        unique: 1 // 중복 불허용
+        unique: true // 중복 불허용
     },
     password: {
         type: String,
